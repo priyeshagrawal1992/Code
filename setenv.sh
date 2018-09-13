@@ -17,4 +17,14 @@
 
 hostname
 
-if [[ hostname | grep -c "UAT"=1 ]]
+if [[ hostname | grep -c "UAT"=1 ]] then
+    set ENV=t
+
+elif [[ hostname | grep -c "PROD"=1 ]] then
+    set ENV=p
+
+elif [[ hostname | grep -c "QA"=1 ]] then
+    set ENV=q
+fi
+
+
