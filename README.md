@@ -1,2 +1,3 @@
-# Pyspark
-Pyspark functions and components
+# Code
+1. Shell scripting
+2. Pyspark functions and components
